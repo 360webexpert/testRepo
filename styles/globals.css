@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.custom_inputOne > label,
+.custom_inputTwo > label,
+.custom_selectOne > label,
+.custom_selectWithRadio > label,
+.custom_fileOne > label.MuiFormLabel-root {
+    position: relative;
+    transform: none;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.custom_inputOne > .MuiInputBase-root,
+.custom_inputTwo > .MuiInputBase-root,
+.custom_selectOne > .MuiInputBase-root,
+.custom_selectWithRadio > .MuiInputBase-root,
+.custom_selectWithRadio > .MuiRadioGroup-root > .MuiInputBase-root {
+    margin-top: 0px !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;  
+    border-radius: 6px;  
+    background-color: #F5F5F5;
+}
+
+.custom_inputOne > .MuiInputBase-root > input,
+.custom_inputTwo > .MuiInputBase-root > input,
+.custom_selectOne > .MuiInputBase-root > .MuiSelect-select,
+.custom_selectWithRadio > .MuiRadioGroup-root > .MuiInputBase-root > .MuiSelect-select {
+    background-color: #F5F5F5;
+    font-size: 16px;
+    padding: 14px 16px;
+    border-radius: 6px;
+    line-height: 1.25;
+    width: 100%;
+    height: auto;   
+    min-height: auto; 
+    border: 1px solid #F5F5F5;
+}
+
+.custom_inputTwo > .MuiInputBase-root {
+    background-color: transparent;
+    border: 1px solid #D1D1D1;
+}
+
+.custom_inputTwo > .MuiInputBase-root > input {
+    background-color: transparent;
+    border: 0px solid #F5F5F5;
+}
+
+.custom_selectWithRadio > .MuiInputBase-root > .MuiSelect-select > label > span.MuiButtonBase-root,
+.custom_selectWithRadio > .MuiRadioGroup-root > .MuiInputBase-root > .MuiSelect-select > label > span.MuiButtonBase-root {
+    padding: 0px 5px 0px 5px;
+}
+
+.custom_selectWithRadio > .MuiRadioGroup-root > .MuiInputBase-root > .MuiSelect-select > label > span.MuiTypography-root {
+    line-height: 1.25;
+} 
+
+.custom_selectWithRadio > .MuiRadioGroup-root > .MuiInputBase-root > .MuiSelect-select > label > span.MuiButtonBase-root > span > svg {
+    width: 18px;
+    height: 18px;
+}
+
+.custom_inputOne > .MuiInputBase-root > input:focus,
+.custom_inputOne > .MuiInputBase-root > input:focus-visible,
+.custom_inputTwo > .MuiInputBase-root.Mui-focused,
+.custom_selectOne > .MuiInputBase-root > .MuiSelect-select:focus,
+.custom_selectOne > .MuiInputBase-root > .MuiSelect-select:focus-visible,
+.custom_selectWithRadio > .MuiRadioGroup-root > .MuiSelect-select:focus,
+.custom_selectWithRadio > .MuiRadioGroup-root > .MuiSelect-select:focus-visible {
+    border: 1px solid #45A9EA;
+    background-color: #ffffff;
+}
+
+.custom_inputOne > .MuiInputBase-root::after,
+.custom_inputOne > .MuiInputBase-root::before,
+.custom_inputTwo > .MuiInputBase-root::after,
+.custom_inputTwo > .MuiInputBase-root::before {
+    display: none !important;
+}
+
+.custom_fileOne > .MuiButtonBase-root {
+    flex-direction: column;
+    background-color: #EEF8FF;
+    color: #4D4D4D;
+    border: 1px dashed #45A9EA;
+    width: 100%;
+    padding: 50px;
+    box-shadow: none;
+}
+
+.custom_fileOne > .MuiButtonBase-root > span {
+    text-transform: none;
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.custom_fileOne > .MuiButtonBase-root > .btn {
+    background-color: #45A9EA;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0;
+    padding: 12px 24px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.upload_progressBar {
+    border: 1px solid #E2E2E2;
+    border-radius: 6px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upload_progressBar > .progress_bar {
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+}
+
+.upload_progressBar > .progress_bar > .bar {
+    width: 140px;
+    text-align: center;
+}
+
+.tab_styleOne button.MuiButtonBase-root {
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tab_styleOne button.MuiButtonBase-root + button.MuiButtonBase-root {
+    margin-left: 15px !important;
+}
+
+.table_styleOne {
+    position: relative;
+    overflow-x: auto;
+    box-shadow: none;
+}
+
+.pagination_styleOne ul.MuiPagination-ul {
+    justify-content: center;
+}
