@@ -23,7 +23,6 @@ import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
-import DefaultLayout from '../../components/Layouts/DefaultLayout';
 
 
 const drawerWidth = 240;
@@ -79,7 +78,6 @@ export default function Member(props) {
   };
 
   const drawer = (
-    <DefaultLayout>
     <div>
       <Toolbar />
       <Divider />
@@ -98,7 +96,6 @@ export default function Member(props) {
       </List>
       
     </div>
-    </DefaultLayout>
   );
 
   // Remove this const when copying and pasting into your project.
